@@ -13,14 +13,16 @@ Ogni gruppo definisce un titolo progetto (< 100 caratteri) e una descrizione( <5
 
 
 ## Partecipanti
-Elenco partecipanti
+Lorenco Malaj
+Gianluca Consiglio
+Nicole Bertelli
 
 ## Ruoli
 
-* PROJECT_MANAGER = 
+* PROJECT_MANAGER = Lorenco Malaj;
 * DOCUMENTAZIONE = 
-* CODING JS
-* CODING UI
+* CODING JS = Gianluca Consiglio;
+* CODING UI = Nicole Bertelli, Lorenco Malaj;
 
 ## Regolamento
 * Ogni gruppo consegnerà il link ad un repository GIT che sarà un fork di questo progetto.
