@@ -9,16 +9,18 @@ let year = "2019"
 let month = "11"
 let filter = "cat"
 
-const makeSpoiler = (main, lead_paragraph) =>{
+const makeSpoiler = (main, lead_paragraph,link) =>{
+  console.log(link)
   let input = '<input type="checkbox" id="' + main + '" aria-hidden="true">'
-  let label = '<label for="' + main + '" aria-hidden="true">' + main + '</label>'
+  let span = '<a href="' + link + '"> <span class="icon-alert secondary"></span></a>'
+  let label = '<label for="' + main + '" aria-hidden="true">' + main +  '</label>'
   let div = '<div><p>'+lead_paragraph+'</p></div>'
   return (input + label + div)
 }
 
 const viewArticles = (articles) =>{
   for(let i = 0; i < articles.length; i++){
-        result.innerHTML += makeSpoiler(articles[i].headline.main,articles[i].lead_paragraph)
+        result.innerHTML += makeSpoiler(articles[i].headline.main,articles[i].lead_paragraph,articles[i])
       }
 }
 
@@ -33,7 +35,7 @@ const searchArticles = async () =>{
     .then(body => {
       articles = body.response.docs
       for(let i = 0; i < articles.length; i++){
-        result.innerHTML += makeSpoiler(articles[i].headline.main,articles[i].lead_paragraph)
+        result.innerHTML += makeSpoiler(articles[i].headline.main,articles[i].lead_paragraph,articles[i].url)
       }
     });
     console.log("endfetch")
@@ -47,7 +49,7 @@ const popularArticles = async (time, ranking_type) =>{
     .then(body => {
       articles = body.results
       for(let i = 0; i < articles.length; i++){
-        result.innerHTML += makeSpoiler(articles[i].title,articles[i].abstract)
+        result.innerHTML += makeSpoiler(articles[i].title,articles[i].abstract,articles[i].url)
       }
       
     });

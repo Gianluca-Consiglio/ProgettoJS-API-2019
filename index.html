@@ -4,21 +4,81 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    
     <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
     
-    <header>
+    <header class="sticky">
     <a href="#" class="logo">NY Times API</a>
-    <a href="#" class="button">FUNZ1</a>
+    <a href="#" class="button">FUNCTION1</a>
+    <a href="#" class="button">FUNCTION2</a>
+    <a href="#" class="button">FUNCTION3</a>
    </header>
+   
 
+
+   <div class="container">
+                        <div class="row cols-sm-12 cols-md-10">
+                          <div class="col-md-offset-1">
+                                  <div class="section1">
+                                    <h1 class="title"> Search by word </h1>
+
+<div class="row">
+<div class="col-sm-12 col-md-8 col-lg-4 col-lg-offset-1">
     <input id = "filterText" type="text">
     <button id = "loadingButton">search</button>
+</div>
+
+<div class="col-sm-12 col-md-2 col-lg-2">
+    <ul>
+  <li class="dropdown">
+    <a href="#" class="button" class="dropbtn">Categories</a>
+    <div class="dropdown-content">
+      <a href="#">Arts</a>
+      <a href="#">Automobiles</a>
+      <a href="#">Books</a>
+      <a href="#">Books</a>
+      <a href="#">Business</a>
+      <a href="#">Fashion</a>
+      <a href="#">Food</a>
+      <a href="#">Health</a>
+      <a href="#">Home</a>
+      <a href="#">Insider</a>
+      <a href="#">Magazine</a>
+      <a href="#">Movies</a>
+      <a href="#">National</a>
+      <a href="#">Nyregion</a>
+      <a href="#">Obituaries</a>
+      <a href="#">Opinion</a>
+      <a href="#">Politics</a>
+      <a href="#">Realestate</a>
+      <a href="#">Science</a>
+      <a href="#">Sports</a>
+      <a href="#">Sundayreview</a>
+      <a href="#">Technology</a>
+      <a href="#">Theater</a>
+      <a href="#">Tmagazine</a>
+      <a href="#">Travel</a>
+      <a href="#">Upshot</a>
+      <a href="#">World</a>
+    </div>
+  </li>
+</ul>
+</div>
+</div>
+
     <div id="results" class="collapse"></div>
     <script src="script.js"></script>
+
+                                  </div>
+                          </div>
+                        </div>
+   </div>
+
+   
   </body>
 
 </html>
