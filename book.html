@@ -1,29 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
+    
     <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
-</head>
-<body>
-    <header class="sticky">
-    <a href="#" class="logo">NY Times API</a>
-    <a href="#" class="button">FUNCTION1</a>
-    <a href="#" class="button">FUNCTION2</a>
-    <a href="#" class="button">FUNCTION3</a>
-    <a href="#" idclass="button"> Categories</a>
-<li class="dropdown">
-    <a href="#" class="dropbtn">Dropdown</a>
-    <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
-  </li>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
 
+  <body>
+    
+    <header class="sticky">
+    <a href="index.html" class="logo">NY Times API</a>
+    <a href="book.html" class="button">BOOK</a>
+    <a href="#" class="button">FILM</a>
+    <a href="#" class="button">FUNCTION3</a>
    </header>
+   
+
 
    <div class="container">
                         <div class="row cols-sm-12 cols-md-10">
@@ -31,8 +26,13 @@
                                   <div class="section1">
                                     <h1 class="title"> Search by word </h1>
 
+<div class="row">
+<div class="col-sm-12 col-md-8 col-lg-4 col-lg-offset-1">
     <input id = "filterText" type="text">
     <button id = "loadingButton">search</button>
+</div>
+</div>
+
     <div id="results" class="collapse"></div>
     <script src="script.js"></script>
 
@@ -40,6 +40,8 @@
                           </div>
                         </div>
    </div>
-    <script src="book.js"></script>
-</body>
+
+   
+  </body>
+
 </html>

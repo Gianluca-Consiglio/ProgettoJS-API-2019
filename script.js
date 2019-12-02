@@ -12,8 +12,8 @@ let filter = "cat"
 const makeSpoiler = (main, lead_paragraph,link) =>{
   console.log(link)
   let input = '<input type="checkbox" id="' + main + '" aria-hidden="true">'
-  let span = '<a href="' + link + '"> <span class="icon-alert secondary"></span></a>'
-  let label = '<label for="' + main + '" aria-hidden="true">' + main +  '</label>'
+  let span = '<a href="' + link + '"> <span class="icon-link secondary"></span></a>'
+  let label = '<label for="' + main + '" aria-hidden="true">' + main + span +  '</label>'
   let div = '<div><p>'+lead_paragraph+'</p></div>'
   return (input + label + div)
 }
