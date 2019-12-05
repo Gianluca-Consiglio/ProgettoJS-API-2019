@@ -10,7 +10,6 @@ let month = "11"
 let filter = "cat"
 
 const makeSpoiler = (main, lead_paragraph,link) =>{
-  console.log(link)
   let input = '<input type="checkbox" id="' + main + '" aria-hidden="true">'
   let span = '<a href="' + link + '"> <span class="icon-link secondary"></span></a>'
   let label = '<label for="' + main + '" aria-hidden="true">' + main + span +  '</label>'
@@ -25,7 +24,7 @@ const viewArticles = (articles) =>{
 }
 
 
-const searchArticles = async () =>{
+const searchArticles = () =>{
   if(filter === "")
     return
   result.innerHTML = ""
@@ -41,7 +40,7 @@ const searchArticles = async () =>{
     console.log("endfetch")
 }
 
-const popularArticles = async (time, ranking_type) =>{
+const popularArticles =  (time, ranking_type) =>{
   result.innerHTML = ""
   console.log(url+"mostpopular/v2/"+ranking_type + "/" + time + ".json?api-key=" + key)
   fetch(url+"mostpopular/v2/"+ranking_type + "/" + time + ".json?api-key=" + key)

@@ -1,12 +1,13 @@
 body{
-    background-image: url("SF1.jpg");
+    background-image: url("SF3.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .logo{
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
 }
 
 .button{
@@ -15,11 +16,14 @@ body{
 
 .section1{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-image: url("SF2.jpg");
+    background-image: url("SF1.jpg");
 }
 
 .title{
-  font-family: 'Times New Roman', Times, serif
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  text-align: center;
+  color: #54544c;
 }
 
 
@@ -37,7 +41,7 @@ li {
 }
 
 li a, .dropbtn {
-  display: inline-block;
+  display: table;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -49,7 +53,7 @@ li a:hover, .dropdown:hover .dropbtn {
 }
 
 li.dropdown {
-  display: inline-block;
+  display: table;
 }
 
 .dropdown-content {
