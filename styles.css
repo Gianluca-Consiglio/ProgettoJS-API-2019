@@ -4,6 +4,12 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.logo1
+{
+  margin-left: 15px;
+	float: left;
+	width: 35px;
+}
 
 .logo{
     font-family: 'Times New Roman', Times, serif;

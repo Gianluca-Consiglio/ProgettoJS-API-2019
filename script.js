@@ -17,18 +17,12 @@ const makeSpoiler = (main, lead_paragraph,link) =>{
   return (input + label + div)
 }
 
-const viewArticles = (articles) =>{
-  for(let i = 0; i < articles.length; i++){
-        result.innerHTML += makeSpoiler(articles[i].headline.main,articles[i].lead_paragraph,articles[i])
-      }
-}
-
 
 const searchArticles = () =>{
   if(filter === "")
     return
   result.innerHTML = ""
-  console.log(url + search + ".json?q="+ filter  + "&api-key=" + key)
+  //console.log(url + search + ".json?q="+ filter  + "&api-key=" + key)
     fetch(url + search + ".json?q="+ filter  + "&api-key=" + key)
     .then(r => r.json())
     .then(body => {
@@ -37,12 +31,11 @@ const searchArticles = () =>{
         result.innerHTML += makeSpoiler(articles[i].headline.main,articles[i].lead_paragraph,articles[i].url)
       }
     });
-    console.log("endfetch")
 }
 
 const popularArticles =  (time, ranking_type) =>{
   result.innerHTML = ""
-  console.log(url+"mostpopular/v2/"+ranking_type + "/" + time + ".json?api-key=" + key)
+  //console.log(url+"mostpopular/v2/"+ranking_type + "/" + time + ".json?api-key=" + key)
   fetch(url+"mostpopular/v2/"+ranking_type + "/" + time + ".json?api-key=" + key)
   .then(r => r.json())
     .then(body => {
@@ -52,7 +45,6 @@ const popularArticles =  (time, ranking_type) =>{
       }
       
     });
-    console.log("endfetch")
 }
 
 
