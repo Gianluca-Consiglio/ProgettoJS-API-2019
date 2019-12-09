@@ -1,8 +1,6 @@
-# Scheletro per i lavori di gruppo
-
-## Titolo progetto 
-
-Ogni gruppo definisce un titolo progetto (< 100 caratteri) e una descrizione( <5000 parole)
+## New York Times API
+Il progetto consiste nella realizzazione di un sito WEB che, partendo dall’acquisizione e dall’elaborazione dei dati forniti da un’API a scelta, consenta la visualizzazione delle informazioni all’utente. 
+L’API da noi scelta è quella ufficiale del New York Times, il celebre quotidiano newyorkese.
 
 
 * https://github.com/public-apis/public-apis
@@ -20,9 +18,9 @@ Nicole Bertelli
 ## Ruoli
 
 * PROJECT_MANAGER = Lorenco Malaj;
-* DOCUMENTAZIONE = 
+* DOCUMENTAZIONE = Lorenco Malaj, Nicole Bertelli;
 * CODING JS = Gianluca Consiglio;
-* CODING UI = Nicole Bertelli, Lorenco Malaj;
+* CODING UI = Lorenco Malaj;
 
 ## Regolamento
 * Ogni gruppo consegnerà il link ad un repository GIT che sarà un fork di questo progetto.
